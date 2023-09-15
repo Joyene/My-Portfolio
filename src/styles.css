@@ -12,7 +12,8 @@
   margin: 0;
   padding: 0;
 }
-.nav-container {
+.main {
+  overflow: hidden;
   background-color: var(--Background);
 }
 /*intro styling*/
@@ -24,7 +25,8 @@
   line-height: 2;
   padding: 60px;
   font-family: var(--font-texts);
-  font-weight: 400;
+  font-weight: 500;
+  font-size: 20px;
 }
 /*logo styling*/
 .logo {
@@ -63,4 +65,107 @@ button {
 }
 .navs a:hover {
   color: var(--Accent);
+}
+/*heading styling*/
+.heading {
+  font-family: var(--font-headings);
+  font-size: 20px;
+  margin: 20px;
+}
+/*container styling  for image1 transitions*/
+.container-image {
+  width: 500px;
+  height: 400px;
+  background-color: var(--Secondary);
+  margin: 25px;
+  border-radius: 15px;
+}
+.image1 {
+  width: 470px;
+  height: 350px;
+  padding: 20px;
+  margin: auto 20px;
+  display: block;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+}
+.buttons {
+  text-align: center;
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 700px;
+  left: 350px;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+.container-image:hover .image1 {
+  opacity: 0.3;
+}
+
+.container-image:hover .buttons {
+  opacity: 1;
+}
+.btns2 {
+  padding: 15px;
+  width: 120px;
+  border-radius: 35px;
+  background-color: var(--Accent);
+  color: var(--Text);
+}
+
+.btns3 {
+  padding: 15px;
+  width: 120px;
+  border-radius: 35px;
+  background-color: var(--Secondary);
+}
+.buttons a {
+  text-decoration: none;
+  color: var(--Text);
+  font-family: var(--font-texts);
+  font-size: 20px;
+}
+.row {
+  margin: 45px;
+}
+/*container styling for image2 transition*/
+.image2 {
+  width: 580px;
+  height: 500px;
+  padding: 20px;
+  margin: auto 12px;
+  display: block;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+}
+.buttons1 {
+  text-align: center;
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 700px;
+  left: 960px;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+.container-image:hover .image2 {
+  opacity: 0.3;
+}
+
+.container-image:hover .buttons1 {
+  opacity: 1;
+}
+.buttons1 a {
+  text-decoration: none;
+  color: var(--Text);
+  font-family: var(--font-texts);
+  font-size: 20px;
+}
+.container-image2 {
+  width: 600px;
+  height: 500px;
+  background-color: var(--Secondary);
+  margin: 25px;
+  border-radius: 15px;
 }
