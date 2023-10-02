@@ -746,4 +746,9 @@ img {
   .container-image4 {
     width: 400px;
   }
+  .image1,
+  .image2,
+  .image3,
+  .image4 {
+  }
 }
